@@ -33,7 +33,6 @@ class PasswordResetCompleteRequestSchema(BaseModel):
         return accounts_validators.validate_password_strength(value)
 
 
-
 class UserLoginRequestSchema(BaseModel):
     email: EmailStr
     password: str
